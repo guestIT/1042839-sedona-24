@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Ilya Gostev](https://up.htmlacademy.ru/adaptive/24/user/1042839).
-* Наставник: `Неизвестно`.
+* Наставник: `Максим Иванов`(https://htmlacademy.ru/profile/id342945).
 
 ---
 
