@@ -1,0 +1,39 @@
+.personal-data {
+
+}
+
+.personal-data::placeholder {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  #name {
+    width: 216px;
+  }
+
+  #surname {
+    width: 178px;
+  }
+
+  #lastname {
+    width: 180px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  #name {
+    width: 350px;
+  }
+
+  #surname {
+    width: 312px;
+  }
+
+  #lastname {
+    width: 314px;
+  }
+}
+
+
