@@ -1,0 +1,15 @@
+.input {
+  display: block;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  border: none;
+  height: 58px;
+}
+
+.input[type="text"] {
+  width: 230px;
+}
+
+.input[placeholder] {
+  padding-left: 22px;
+}
