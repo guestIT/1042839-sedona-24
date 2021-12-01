@@ -1,20 +1,28 @@
-// const gulp = require("gulp");
-// const plumber = require("gulp-plumber");
-// const sourcemap = require("gulp-sourcemaps");
-// const sass = require("gulp-sass");
-// const postcss = require("gulp-postcss");
-// const autoprefixer = require("autoprefixer");
-// const sync = require("browser-sync").create();
-// const csso = require("postcss-csso");
-// const rename = require("gulp-rename");
-// const terser = require("gulp-terser");
-// const htmlmin = require("gulp-htmlmin");
-// const uglify = require("gulp-uglify-es").default;
-// const imagemin = require("gulp-imagemin");
-// const webp = require("gulp-webp");
-// const cheerio = require("gulp-cheerio");
-// const svgstore = require("gulp-svgstore");
-// const del = require("del");
+import gulp from 'gulp';
+import plumber from 'gulp-plumber';
+import sourcemap from 'gulp-sourcemaps';
+import sass from 'gulp-sass';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
+//const sync = require("browser-sync").create();
+import sync from 'browser-sync';
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
+import terser from 'gulp-terser';
+import htmlmin from 'gulp-htmlmin';
+import uglify from 'gulp-uglify-es'//'default';
+import imagemin from 'gulp-imagemin';
+import webp from 'gulp-webp';
+import cheerio from 'gulp-cheerio';
+import svgstore from 'gulp-svgstore';
+import del from 'del';
+
+import gulp from 'gulp';
+import plumber from 'gulp-plumber';
+import sass from 'gulp-dart-sass';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
+import browser from 'browser-sync';
 
 // Styles
 

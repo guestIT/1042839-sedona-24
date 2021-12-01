@@ -1,0 +1,40 @@
+.page-footer {
+
+}
+
+.page-footer__wrapper {
+
+}
+
+.page-footer__title {
+  @include zero-margin;
+  padding-top: 28px;
+  padding-bottom: 33px;
+}
+
+.page-footer__link {
+  display: block;
+  margin: 0;
+  padding: 5px;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+}
+
+.page-footer__socials {
+
+}
+
+.page-footer__copyright {
+
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    padding: 31px 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

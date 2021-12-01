@@ -1,0 +1,48 @@
+/*.page-header {
+  width: 320px;
+  padding: 0 18px;
+  margin: 0 auto;
+}*/
+
+.page-header {
+  @include zero-margin;
+}
+
+.page-header__logo {
+  display: block;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.page-header__logo--hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    background-color: #ffffff;
+  }
+
+  .page-header__logo {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    display: none;
+  }
+
+  .page-header__logo--hidden {
+    display: block;
+    padding: 0 5px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
