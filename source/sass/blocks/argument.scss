@@ -42,7 +42,7 @@
   display: block;
   content: "";
   position: absolute;
-  background-image: url(../img/svg/icon-house.svg);
+  background-image: url('../img/icon/icon-house.svg');
   background-repeat: no-repeat;
   background-size: contain;
   width: 40px;
@@ -51,11 +51,11 @@
 }
 
 .argument__advice:nth-child(2)::before {
-  background-image: url(../img/svg/icon-gift.svg);
+  background-image: url('../img/icon/icon-gift.svg');
   }
 
 .argument__advice:nth-child(3)::before {
-  background-image: url(../img/svg/icon-burger.svg);
+  background-image: url('../img/icon/icon-burger.svg');
 }
 
 li.argument--gray {
@@ -134,7 +134,7 @@ li.argument--gray {
     display: block;
     content: "";
     position: absolute;
-    background-image: url(../img/svg/icon-house.svg);
+    background-image: url('../img/icon/icon-house.svg');
     background-repeat: no-repeat;
     width: 75px;
     height: 72px;
@@ -144,11 +144,11 @@ li.argument--gray {
   }
 
   .argument__advice:nth-child(2)::before {
-    background-image: url(../img/svg/icon-gift.svg);
-    }
+    background-image: url('../img/icon/icon-gift.svg');
+  }
 
   .argument__advice:nth-child(3)::before {
-    background-image: url(../img/svg/icon-burger.svg);
+    background-image: url('../img/icon/icon-burger.svg');
   }
 }
 
