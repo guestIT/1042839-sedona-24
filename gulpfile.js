@@ -1,12 +1,13 @@
-import gulp from 'gulp';
+import gulp, { task } from 'gulp';
 import plumber from 'gulp-plumber';
 import sourcemap from 'gulp-sourcemaps';
-import sass from 'gulp-sass';
-import postcss from 'gulp-postcss';
+import gulpSass from 'gulp-sass';
+import dartSass from 'sass';
+//import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 //const sync = require("browser-sync").create();
 import sync from 'browser-sync';
-import csso from 'postcss-csso';
+//import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import htmlmin from 'gulp-htmlmin';
@@ -23,23 +24,25 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+const { task } = pkg;
+const sass = gulpSass(dartSass);
+
 
 // Styles
-
-// const styles = () => {
-//   return gulp.src("source/sass/style.scss")
-//     .pipe(plumber())
-//     .pipe(sourcemap.init())
-//     .pipe(sass())
-//     .pipe(gulp.dest("build/css"))
-//     .pipe(postcss([
-//       autoprefixer(),csso()
-//     ]))
-//     .pipe(sourcemap.write("."))
-//     .pipe(rename("style.min.css"))
-//     .pipe(gulp.dest("source/css"))
-//     .pipe(sync.stream());
-// }
+//
+task('styles', function() {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    // .pipe(postcss([
+    //   autoprefixer(),csso()
+    // ]))
+    .pipe(sourcemap.write("."))
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("source/css"))
+    .pipe(sync.stream());
+}
 
 // exports.styles = styles;
 
