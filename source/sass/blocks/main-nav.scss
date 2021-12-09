@@ -1,0 +1,40 @@
+.main-nav {
+  background-color: #ffffff;
+}
+
+.main-nav__toggle {
+  display: block;
+  position: absolute;
+  @include zero-margin;
+  width: 23px;
+  height: 22px;
+  top: 20px;
+  left: 85%;
+  border: none;
+  cursor: pointer;
+  background-image: url('../img/icon/icon-menu.svg');
+  background-color: inherit;
+}
+
+.main-nav__wrapper {
+
+}
+
+.main-nav__list {
+  background-color: #81b3d2;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  @include zero-list;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    background-color: #ffffff;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

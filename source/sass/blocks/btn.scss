@@ -1,0 +1,52 @@
+.btn {
+  @include btn;
+}
+
+.btn--review {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.btn__lickes {
+  display: block;
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 5px;
+  text-align: left;
+  width: 23px;
+  height: 21px;
+  background-color: white;
+  background-image: url(../img/icon/like-icon.svg);
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.btn__lickes:last-child {
+  margin-bottom: 54px;
+}
+
+@media (min-width: $tablet-width) {
+  .btn__lickes {
+    position: absolute;
+    left: 81%;
+    top: 38%;
+    bottom: 61%;
+    background-color: #f2f2f2;
+  }
+
+  .btn__lickes--gray {
+    background-color: initial;
+  }
+
+  .btn--review {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .btn__lickes {
+    background-image: url(../img/icon/like-icon-white.svg);
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
