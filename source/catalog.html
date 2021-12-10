@@ -15,10 +15,10 @@
     <header class="page-header header">
       <div class="page-wrapper header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img src="img/svg/logotype-mobile.svg" width="102" height="84" alt="логотип сайта седона">
+          <img src="img/icon/logotype-mobile.svg" width="102" height="84" alt="логотип сайта седона">
         </a>
         <a class="page-header__logo--hidden" href="index.html">
-          <img src="img/png/logotype-desktop.png" width="187" height="97" alt="логотип сайта седона">
+          <img src="img/icon/logotype-desktop.png" width="187" height="97" alt="логотип сайта седона">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
@@ -46,7 +46,11 @@
     <main class="page-main">
       <section class="greeting">
         <div class="greeting__wrapper">
-          <img class="greeting__text" src="img/png/intro-catalog-tablet.png" width="320" height="308" alt="Приветствие сайта Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/background/back-desktop-catalog@1x.jpg 1x, img/background/back-desktop-catalog@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/background/back-tablet-catalog@1x.jpg 1x, img/background/back-tablet-catalog@2x.jpg 2x">
+            <img class="greeting__text" src="img/background/back-mobile-catalog@1x.jpg" width="320" height="308" alt="Приветствие сайта Седона" srcset="img/background/back-mobile-catalog@2x.jpg 2x">
+          </picture>
         </div>
       </section>
       <section class="gallery">
@@ -62,9 +66,9 @@
             <div class="photo__img">
               <a class="photo__link" href="#nowhere" title="Нажми, чтобы увеличить">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/png/road-desktop@1x.png 1x, img/png/road-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/png/road-tablet@1x.png 1x, img/png/road-tablet@2x.png 2x">
-                  <img class="photo__link photo__link--img" src="img/png/road-mobile@1x.png" width="100%" height="280" alt="фото дороги на закате" srcset="img/png/road-mobile@2x.png 2x">
+                  <source media="(min-width: 1200px)" srcset="img/content/road-desktop@1x.png 1x, img/content/road-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/content/road-tablet@1x.png 1x, img/content/road-tablet@2x.png 2x">
+                  <img class="photo__link photo__link--img" src="img/content/road-mobile@1x.png" width="100%" height="280" alt="фото дороги на закате" srcset="img/content/road-mobile@2x.png 2x">
                 </picture>
               </a>
             </div>
@@ -78,9 +82,9 @@
             <div class="photo__img">
               <a class="photo__link" href="#nowhere" title="Нажми, чтобы увеличить">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/png/cactus-desktop@1x.png 1x, img/png/cactus-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/png/cactus-tablet@1x.png 1x, img/png/cactus-tablet@2x.png 2x">
-                  <img class="photo__link photo__link--img" src="img/png/cactus-mobile@1x.png" width="100%" height="280" alt="фото кактуса" srcset="img/png/cactus-mobile@2x.png 2x">
+                  <source media="(min-width: 1200px)" srcset="img/content/cactus-desktop@1x.png 1x, img/content/cactus-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/content/cactus-tablet@1x.png 1x, img/content/cactus-tablet@2x.png 2x">
+                  <img class="photo__link photo__link--img" src="img/content/cactus-mobile@1x.png" width="100%" height="280" alt="фото кактуса" srcset="img/content/cactus-mobile@2x.png 2x">
                 </picture>
               </a>
             </div>
@@ -94,9 +98,9 @@
             <div class="photo__img">
               <a class="photo__link" href="#nowhere" title="Нажми, чтобы увеличить">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/png/north-desktop@1x.png 1x, img/png/north-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/png/north-tablet@1x.png 1x, img/png/north-tablet@2x.png 2x">
-                  <img class="photo__link photo__link--img" src="img/png/north-mobile@1x.png" width="100%" height="280" alt="фото дороги среди леса" srcset="img/png/north-mobile@2x.png 2x">
+                  <source media="(min-width: 1200px)" srcset="img/content/north-desktop@1x.png 1x, img/content/north-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/content/north-tablet@1x.png 1x, img/content/north-tablet@2x.png 2x">
+                  <img class="photo__link photo__link--img" src="img/content/north-mobile@1x.png" width="100%" height="280" alt="фото дороги среди леса" srcset="img/content/north-mobile@2x.png 2x">
                 </picture>
               </a>
             </div>
@@ -110,9 +114,9 @@
             <div class="photo__img">
               <a class="photo__link" href="#nowhere" title="Нажми, чтобы увеличить">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/png/devil-desktop@1x.png 1x, img/png/devil-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/png/devil-tablet@1x.png 1x, img/png/devil-tablet@2x.png 2x">
-                  <img class="photo__link photo__link--img" src="img/png/devil-mobile@1x.png" width="100%" height="280" alt="фото моста дьявола"  srcset="img/png/devil-mobile@2x.png 2x">
+                  <source media="(min-width: 1200px)" srcset="img/content/devil-desktop@1x.png 1x, img/content/devil-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/content/devil-tablet@1x.png 1x, img/content/devil-tablet@2x.png 2x">
+                  <img class="photo__link photo__link--img" src="img/content/devil-mobile@1x.png" width="100%" height="280" alt="фото моста дьявола"  srcset="img/content/devil-mobile@2x.png 2x">
                 </picture>
               </a>
             </div>
@@ -131,9 +135,9 @@
         <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="video__content">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/png/video-desktop@1x.png 1x, img/png/video-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/png/video-tablet@1x.png 1x, img/png/video-tablet@2x.png 2x">
-            <img class="video__poster" src="img/png/video-mobile@1x.png" srcset="img/png/video-mobile@2x.png 2x">
+            <source media="(min-width: 1200px)" srcset="img/content/video-desktop@1x.png 1x, img/content/video-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content/video-tablet@1x.png 1x, img/content/video-tablet@2x.png 2x">
+            <img class="video__poster" src="img/content/video-mobile@1x.png" srcset="img/content/video-mobile@2x.png 2x">
           </picture>
         </div>
         <div class="video__controls">

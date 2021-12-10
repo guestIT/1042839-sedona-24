@@ -1,0 +1,35 @@
+.contacts-input {
+  width: 280px;
+  background: linear-gradient(to right, #F2F2F2 79%, #E6E6E6 21%);
+}
+
+input.contacts-input::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(./img/icon/mail.svg);
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-repeat: no-repeat; //разобраться
+}
+
+.contacts-input::placeholder {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-input {
+    width: 648px;
+    background: linear-gradient(to right, #F2F2F2 91%, #E6E6E6 9%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-input {
+    width: 315px;
+    background: linear-gradient(to right, #F2F2F2 79%, #E6E6E6 21%);
+  }
+}

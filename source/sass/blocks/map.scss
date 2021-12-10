@@ -1,0 +1,31 @@
+.map {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.map::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url(../img/icon/map-marker.svg);
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  margin-right: -50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.map__img {
+  display: block;
+  width: 100%;
+  max-height: 350px;
+}
+
+@media (min-width: $tablet-width) {
+  .map__img {
+    display: block;
+    width: 100%;
+  }
+}

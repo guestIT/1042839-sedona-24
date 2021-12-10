@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="img/favicon/favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon.png">
@@ -17,10 +17,10 @@
         <button class="main-nav__toggle" type="button" aria-label="открыть меню"></button>
         <div class="main-nav__wrapper">
           <a class="page-header__logo">
-            <img src="img/svg/logotype-mobile.svg" width="102" height="84" alt="логотип сайта седона">
+            <img src="img/icon/logotype-mobile.svg" width="102" height="84" alt="логотип сайта седона">
           </a>
           <a class="page-header__logo--hidden">
-            <img src="img/png/logotype-desktop.png" width="187" height="97" alt="логотип сайта седона">
+            <img src="img/icon/logotype-desktop.png" width="187" height="97" alt="логотип сайта седона">
           </a>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
@@ -43,7 +43,11 @@
     <main class="page-main">
       <section class="greeting">
         <div class="greeting__wrapper">
-          <img class="greeting__text" src="img/png/tablet-intro.png" width="320" height="308" alt="Приветствие сайта Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/background/back-desktop-index@1x.jpg 1x, img/background/back-desktop-index@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/background/back-tablet-index@1x.jpg 1x, img/background/back-tablet-index@2x.jpg 2x">
+            <img class="greeting__text" src="img/background/back-mobile-index@1x.jpg" width="320" height="308" alt="Приветствие сайта Седона" srcset="img/background/back-mobile-index@2x.jpg 2x">
+          </picture>
         </div>
       </section>
       <section class="features">
@@ -62,9 +66,9 @@
             <p class="argument__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/png/city-desktop@1x.png 1x, img/png/city-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/png/city-tablet@1x.png 1x, img/png/city-tablet@2x.png 2x">
-              <img class="argument__image" src="img/png/city-mobile@1x.png" width="320" height="260" alt="Фото города Седона" srcset="img/png/city-mobile@2x.png 2x">
+            <source media="(min-width: 1200px)" srcset="img/content/city-desktop@1x.png 1x, img/content/city-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content/city-tablet@1x.png 1x, img/content/city-tablet@2x.png 2x">
+              <img class="argument__image" src="img/content/city-mobile@1x.png" width="320" height="260" alt="Фото города Седона" srcset="img/content/city-mobile@2x.png 2x">
           </picture>
           </li>
           <li class="arguments__item argument argument--standart">
@@ -90,9 +94,9 @@
                 <p class="argument__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/png/bridge-desktop@1x.png 1x, img/png/bridge-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/png/bridge-tablet@1x.png 1x, img/png/bridge-tablet@2x.png 2x">
-              <img class="argument__image" src="img/png/bridge-mobile@1x.png" width="320" height="260" alt="Седона мост" srcset="img/png/bridge-mobile@2x.png 2x">
+                <source media="(min-width: 1200px)" srcset="img/content/bridge-desktop@1x.png 1x, img/content/bridge-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content/bridge-tablet@1x.png 1x, img/content/bridge-tablet@2x.png 2x">
+              <img class="argument__image" src="img/content/bridge-mobile@1x.png" width="320" height="260" alt="Седона мост" srcset="img/content/bridge-mobile@2x.png 2x">
               </picture>
             </li>
             <li class="arguments__item argument argument--gray">
@@ -124,9 +128,9 @@
       </div>
       <section class="map">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/png/map-desktop@1x.png 1x, img/png/map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/png/map-tablet@1x.png 1x, img/png/map-tablet@2x.png 2x">
-        <img class="map__img" src="img/png/map-mobile@1x.png" width="320" height="350" alt="карта седона" srcset="img/png/map-mobile@2x.png 2x">
+          <source media="(min-width: 1200px)" srcset="img/content/map-desktop@1x.png 1x, img/content/map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content/map-tablet@1x.png 1x, img/content/map-tablet@2x.png 2x">
+        <img class="map__img" src="img/content/map-mobile@1x.png" width="320" height="350" alt="карта седона" srcset="img/content/map-mobile@2x.png 2x">
         </picture>
       </section>
     </main>
