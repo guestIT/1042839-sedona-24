@@ -1,6 +1,20 @@
 .greeting {
+  position: relative;
   margin-bottom: 33px;
   background-image: url('../img/background/back-mobile-index@1x.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.greeting::after {
+  content: "";
+  display: block;
+  height: 57px;
+  width: 100%;
+  background-image: url(../img/icon/triangle-mobile-catalog.svg);
+  position: absolute;
+  bottom: -1px;
+  left: 0;
 }
 
 .greeting__text {
@@ -10,6 +24,7 @@
 
 .greeting__wrapper {
   margin: 0 auto;
+  padding: 90px 0 85px;
 }
 
 @media (min-width: $tablet-width) {

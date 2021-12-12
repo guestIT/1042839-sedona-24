@@ -6,12 +6,18 @@
 
 .page-header {
   @include zero-margin;
+  position: relative;
+  z-index: 2;
 }
 
 .page-header__logo {
   display: block;
   padding: 0 5px;
   text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
 }
 
 .page-header__logo--hidden {
