@@ -1,5 +1,7 @@
 .features {
   @include zero-margin;
+  padding-top: 32px;
+  padding-bottom: 9px;
 }
 
 .features__description {
@@ -9,6 +11,7 @@
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+  padding: 0 28px;
 }
 
 @media (min-width: $tablet-width) {

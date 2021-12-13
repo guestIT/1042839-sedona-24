@@ -5,8 +5,36 @@
   margin: 0 auto;
 }
 
+.inner-list__item:first-child {
+  position: relative;
+  padding-top: 26px;
+}
+
+.inner-list__item:first-child::after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #D6D6D6;
+  bottom: 25px;
+  width: 100%;
+  position: absolute;
+}
+
+.inner-list__item:nth-child(2) {
+  position: relative;
+}
+
+.inner-list__item:nth-child(2):after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #D6D6D6;
+  bottom: 25px;
+  width: 100%;
+  position: absolute;
+}
+
+
 .inner-list__item {
-  padding: 26px 6px 50px 6px;
+  padding: 0 0 50px;
 }
 
 .inner-list__item:last-child {
@@ -15,10 +43,12 @@
 
 .inner-list__title {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .inner-list__number {
-
+  display: block;
+  margin-bottom: 20px;
 }
 
 .inner-list__text {

@@ -1,5 +1,16 @@
 .arguments {
+  position: relative;
+}
 
+.arguments::before {
+  content: "";
+  display: block;
+  height: 37px;
+  width: 100%;
+  background-image: url('../img/icon/index-mobile-triangle-internal.svg');
+  position: absolute;
+  top: -1px;
+  left: 0;
 }
 
 .arguments__list {
@@ -7,11 +18,7 @@
   @include zero-list;
 }
 
-.arguments__item {
-
-}
-
-.argument__block--white {
-  background-color: #81b3d2;
-  color: #ffffff;
-}
+// .argument__block--white {
+//   background-color: #81b3d2;
+//   color: #ffffff;
+// } //Отсутствует БЭМ блок
