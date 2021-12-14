@@ -1,28 +1,55 @@
 .video__header {
   width: 266px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+  }
 }
 
 .video__title {
   margin: 0;
   padding-bottom: 40px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .video__description {
   margin: 0;
   padding-bottom: 33px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+    margin: 0 auto;
+  }
 }
 
 .video__content {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
 .video__poster {
   display: block;
   width: 648px;
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
 .video__controls {
@@ -33,12 +60,30 @@
   top: -45px;
   padding: 0;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 93px;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: -93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
 .video__scale {
   position: relative;
   height: 45px;
   background-color: rgba(0, 0, 0, 0.6);
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: initial;
+    height: 93px;
+  }
 }
 
 .video__bar {
@@ -48,6 +93,17 @@
   background-color: rgba(225, 225, 225, 0.2);
   height: 3px;
   width: 235px;
+
+  @media (min-width: $tablet-width) {
+    width: 389px;
+    margin: 0;
+    background-color: rgba(225, 225, 225, 0.2);
+    left: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
+  }
 }
 
 .video__toggle {
@@ -62,12 +118,20 @@
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: 204px;
+  }
 }
 
 .video__buttons {
   display: flex;
   height: 66px;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .video__button {
@@ -79,125 +143,52 @@
 
 .video__button--hidden {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    background-color: initial;
+  }
 }
 
 .video__button--replay {
   margin-left: 25px;
   margin-right: auto;
-}
 
-.video__button--subtitles {
-  margin-right: 31px;
-}
-
-.video__button--fullscreen {
-  margin-right: 23px;
-}
-
-@media (min-width: $tablet-width) {
-  .video__header {
-    width: 445px;
-    margin: 0 auto;
-  }
-
-  .video__title {
-    font-size: 30px;
-    line-height: 26px;
-  }
-
-  .video__description {
-    width: 445px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .video__content {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .video__controls {
-    width: 648px;
-    height: 93px;
-    background-color: rgba(0, 0, 0, 0.6);
-    top: -93px;
-  }
-
-  .video__scale {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    background-color: initial;
-    height: 93px;
-  }
-
-  .video__button--hidden {
-    display: flex;
-    background-color: initial;
-  }
-
-  .video__bar {
-    width: 389px;
-    margin: 0;
-    background-color: rgba(225, 225, 225, 0.2);
-    left: 93px;
-  }
-
-  .video__toggle {
-    left: 204px;
-  }
-
-  .video__button--replay {
+  @media (min-width: $tablet-width) {
     position: absolute;
     margin-right: auto;
     left: 35px;
   }
 
-  .video__button--subtitles {
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.video__button--subtitles {
+  margin-right: 31px;
+
+  @media (min-width: $tablet-width) {
     position: absolute;
     margin: 0;
     right: 92px;
   }
 
-  .video__button--fullscreen {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.video__button--fullscreen {
+  margin-right: 23px;
+
+  @media (min-width: $tablet-width) {
     position: absolute;
     margin: 0;
     right: 41px;
   }
 
-  .video__buttons {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .video__content video {
-    display: block;
-    margin: 0 auto;
-    width: 800px;
-  }
-
-  .video__controls {
-    width: 800px;
-  }
-
-  .video__button--replay {
-    margin-left: 0;
-  }
-
-  .video__button--fullscreen {
+  @media (min-width: $desktop-width) {
     right: 37px;
-  }
-
-  .video__button--subtitles {
-    display: none;
-  }
-
-  .video__bar {
-    width: 540px;
-  }
-
-  .video__poster {
-    width: 800px;
   }
 }

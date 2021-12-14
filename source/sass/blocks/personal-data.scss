@@ -1,7 +1,3 @@
-.personal-data {
-
-}
-
 .personal-data::placeholder {
   color: #000000;
   font-size: 18px;
@@ -11,28 +7,24 @@
 @media (min-width: $tablet-width) {
   #name {
     width: 216px;
+
+    @media (min-width: $desktop-width) {
+      width: 350px;
+    }
   }
 
   #surname {
     width: 178px;
+
+    @media (min-width: $desktop-width) {
+      width: 312px;
   }
 
   #lastname {
     width: 180px;
-  }
-}
 
-@media (min-width: $desktop-width) {
-  #name {
-    width: 350px;
-  }
-
-  #surname {
-    width: 312px;
-  }
-
-  #lastname {
-    width: 314px;
+    @media (min-width: $desktop-width) {
+      width: 314px;
   }
 }
 

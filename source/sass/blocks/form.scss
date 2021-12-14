@@ -1,30 +1,3 @@
-.form {
-
-}
-
-.form__block {
-  @include zero-margin;
-  border: none;
-  width: 100%;
-}
-
-.form__subtitle {
-  width: 280px;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  display: block;
-  font: inherit;
-  font-style: normal;
-  font-weight: bold;
-  text-align: center;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.form__footnote {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   form { //можно ли повесить класс форм на саму форму? такой класс уже есть в теге section если применить грид к секции, раскладка грид  не работала
     display: grid;
@@ -32,6 +5,11 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     width: 648px;
     margin: 0 auto;
+
+    @media (min-width: $desktop-width) {
+      width: 960px;
+      margin: 0 auto;
+    }
   }
 
   .form__block:nth-child(1) {
@@ -42,6 +20,10 @@
   .form__block:nth-child(2) {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
   }
 
   .form__block:nth-child(3) {
@@ -58,21 +40,62 @@
     grid-column: 1 / 3;
     grid-row: 4 / 5;
   }
+}
 
-  .form__subtitle {
+.form__block {
+  @include zero-margin;
+  border: none;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.form__subtitle {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  display: block;
+  font: inherit;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 60px;
     text-align: start;
   }
 
-  .form__block {
-    margin: 0;
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
   }
+}
 
+.form__footnote {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    text-align: end;
+    align-self: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .form__subtitle--contacts {
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 40px;
+
+    @media (min-width: $desktop-width) {
+      position: relative;
+    }
   }
 
   .form__subtitle--sights {
@@ -87,34 +110,9 @@
     margin-top: 15px;
     margin-bottom: 54px;
   }
-
-  .form__footnote {
-    display: block;
-    text-align: end;
-    align-self: center;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  form {
-    width: 960px;
-    margin: 0 auto;
-  }
-
-  .form__block:nth-child(2) {
-    display: flex;
-  }
-
-  .form__subtitle {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 60px;
-  }
-
-  .form__subtitle--contacts {
-    position: relative;
-  }
-
   .form__subtitle--contacts::before {
     display: block;
     position: absolute;
@@ -123,7 +121,7 @@
     height: 1px;
     left: -340px;
     top: 50%;
-    background-color: #dBdBdB;
+    background-color: #dbdbdb;
   }
 
   .form__subtitle--contacts::after {
@@ -134,7 +132,7 @@
     height: 1px;
     right: -340px;
     top: 50%;
-    background-color: #dBdBdB;
+    background-color: #dbdbdb;
   }
 
   .form__subtitle--sights {
@@ -149,7 +147,7 @@
     height: 1px;
     left: -340px;
     top: 50%;
-    background-color: #dBdBdB;
+    background-color: #dbdbdb;
   }
 
   .form__subtitle--sights::after {
@@ -160,7 +158,7 @@
     height: 1px;
     right: -340px;
     top: 50%;
-    background-color: #dBdBdB;
+    background-color: #dbdbdb;
   }
 
   .form__subtitle--emotions::before {
@@ -171,7 +169,7 @@
     height: 1px;
     left: -340px;
     top: 50%;
-    background-color: #dBdBdB;
+    background-color: #dbdbdb;
   }
 
   .form__subtitle--emotions::after {
@@ -182,6 +180,6 @@
     height: 1px;
     right: -340px;
     top: 50%;
-    background-color: #dBdBdB;
+    background-color: #dbdbdb;
   }
 }

@@ -1,6 +1,11 @@
 .review {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 435px;
+    margin-bottom: 37px;
+  }
 }
 
 .review__header {
@@ -12,20 +17,13 @@
 
 .review__header--title {
   padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .review__description {
   @include zero-margin;
   text-align: center;
-}
-
-@media (min-width: $tablet-width) {
-  .review {
-    width: 435px;
-    margin-bottom: 37px;
-  }
-
-  .review__header--title {
-    font-size: 30px;
-  }
 }

@@ -1,9 +1,10 @@
-.page-footer {
-
-}
-
-.page-footer__wrapper {
-
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    padding: 31px 0;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .page-footer__title {
@@ -20,21 +21,4 @@
   line-height: 26px;
   color: #000000;
   text-align: center;
-}
-
-.page-footer__socials {
-
-}
-
-.page-footer__copyright {
-
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer {
-    display: flex;
-    padding: 31px 0;
-    justify-content: space-around;
-    align-items: center;
-  }
 }
