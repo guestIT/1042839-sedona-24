@@ -1,8 +1,8 @@
 .sights-list {
   @include zero-list;
-  margin-bottom: 46px;
-  width: 280px;
   margin: 0 auto;
+  width: 280px;
+  margin-bottom: 46px;
   display: flex;
   flex-direction: column;
 

@@ -19,14 +19,14 @@
 }
 
 .main-nav__toggle {
+  @include zero-margin;
   display: block;
   position: relative;
-  @include zero-margin;
   width: 23px;
   height: 22px;
   border: none;
   cursor: pointer;
-  background-image: url('../img/icon/icon-menu.svg');
+  background-image: url("../img/icon/icon-menu.svg");
   background-color: transparent;
   z-index: 2;
 
@@ -44,10 +44,10 @@
 }
 
 .main-nav__toggle--active {
-  background-image: url('../img/icon/icon-menu-closed.svg');
+  background-image: url("../img/icon/icon-menu-closed.svg");
 }
 
-.main-nav__toggle--active:active {
+.main-nav__toggle--active:hover {
   opacity: 0.6;
 }
 
@@ -56,13 +56,13 @@
 }
 
 .main-nav__list {
+  @include zero-list;
   display: none;
   background-color: #81b3d2;
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
   text-align: center;
-  @include zero-list;
   position: absolute;
   top: 0;
   left: 0;

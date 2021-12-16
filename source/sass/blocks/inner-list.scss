@@ -1,6 +1,6 @@
 .inner-list {
-  list-style: none;
   @include zero-margin;
+  list-style: none;
   width: 280px;
   margin: 0 auto;
 
@@ -37,7 +37,7 @@
   position: relative;
 }
 
-.inner-list__item:nth-child(2):after {
+.inner-list__item:nth-child(2)::after {
   display: block;
   content: "";
   border-bottom: 1px solid #d6d6d6;

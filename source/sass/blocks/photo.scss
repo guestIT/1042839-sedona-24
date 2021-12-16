@@ -49,13 +49,13 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .photo__signature--gray {
-    background-color: #eaeaea;
-  }
+// @media (min-width: $tablet-width) {
+//   .photo__signature--gray {
+//     background-color: #eaeaea;
+//   }
 
-  .photo__link--img {
-    display: block;
+.photo__link--img {
+  display: block;
 
     @media (min-width: $desktop-width) {
       max-height: 400px;

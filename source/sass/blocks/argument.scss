@@ -10,6 +10,7 @@
 }
 
 .argument__text {
+  @include zero-margin;
   padding-bottom: 24px;
   margin-bottom: 33px;
 }
@@ -106,7 +107,6 @@
     display: block;
     content: "";
     position: absolute;
-    background-image: url('../img/icon/icon-house.svg');
     background-repeat: no-repeat;
     width: 75px;
     height: 72px;
@@ -114,26 +114,18 @@
     left: -37px;
     top: -50%;
   }
-
-  .argument__advice:nth-child(2)::before {
-    background-image: url('../img/icon/icon-gift.svg');
-  }
-
-  .argument__advice:nth-child(3)::before {
-    background-image: url('../img/icon/icon-burger.svg');
-  }
 }
 
 .argument__advice--home::before {
-  background-image: url('../img/icon/icon-house.svg');
+  background-image: url("../img/icon/icon-house.svg");
 }
 
 .argument__advice--gift::before {
-  background-image: url('../img/icon/icon-gift.svg');
+  background-image: url("../img/icon/icon-gift.svg");
 }
 
 .argument__advice--food::before {
-  background-image: url('../img/icon/icon-burger.svg');
+  background-image: url("../img/icon/icon-burger.svg");
 }
 
 li.argument--gray {
@@ -160,8 +152,4 @@ li.argument--gray {
   @media (min-width: $tablet-width) {
     max-height: 256px;
   }
-}
-
-.argument__text {
-  @include zero-margin;
 }

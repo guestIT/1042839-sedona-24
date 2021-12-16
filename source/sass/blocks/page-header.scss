@@ -1,9 +1,3 @@
-/*.page-header {
-  width: 320px;
-  padding: 0 18px;
-  margin: 0 auto;
-}*/
-
 .page-header {
   @include zero-margin;
   position: relative;
@@ -25,9 +19,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    z-index: 3;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,5 +38,6 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    z-index: 2;
   }
 }

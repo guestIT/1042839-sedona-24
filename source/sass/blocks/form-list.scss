@@ -55,23 +55,23 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .form-list--contacts {
+.form-list--contacts {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-  }
 
-  @media (min-width: $desktop-width) {
-    width: 960px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 79px;
+    @media (min-width: $desktop-width) {
+      width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 79px;
+    }
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form-list__span--visible {
+.form-list__span--visible {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }

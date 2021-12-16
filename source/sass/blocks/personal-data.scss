@@ -4,28 +4,29 @@
   font-weight: bold;
 }
 
-@media (min-width: $tablet-width) {
-  #name {
-    width: 216px;
+// #name {
+//   @media (min-width: $tablet-width) {
+//   width: 216px;
 
-    @media (min-width: $desktop-width) {
-      width: 350px;
-    }
-  }
+//   @media (min-width: $desktop-width) {
+//     width: 350px;
+//   }
+// }
 
-  #surname {
-    width: 178px;
+// #surname {
+//   @media (min-width: $tablet-width) {
+//   width: 178px;
 
-    @media (min-width: $desktop-width) {
-      width: 312px;
-  }
+//   @media (min-width: $desktop-width) {
+//     width: 312px;
+//   }
+// }
 
-  #lastname {
-    width: 180px;
+// #lastname {
+//   @media (min-width: $tablet-width) {
+//     width: 180px;
 
-    @media (min-width: $desktop-width) {
-      width: 314px;
-  }
-}
-
-
+//   @media (min-width: $desktop-width) {
+//     width: 314px;
+//   }
+// }
