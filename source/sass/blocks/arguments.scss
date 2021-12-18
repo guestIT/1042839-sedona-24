@@ -11,6 +11,10 @@
   position: absolute;
   top: -1px;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .arguments__list {

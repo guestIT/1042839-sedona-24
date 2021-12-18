@@ -5,14 +5,16 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 28px;
+    display: inline-block;
+    max-width: 151px;
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 
 .argument__text {
   @include zero-margin;
-  padding-bottom: 24px;
-  margin-bottom: 33px;
+  line-height: 21px;
 }
 
 .argument--illustration {
@@ -33,10 +35,18 @@
 
 .argument--illustration:first-child {
   padding-top: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .argument--illustration:nth-last-of-type(2) {
   padding-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .argument--standart {
@@ -143,6 +153,12 @@ li.argument--gray {
   @include zero-margin;
   text-align: center;
   padding: 0 28px 39px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 21px;
+    max-width: 290px;
+    display: inline-block;
+  }
 }
 
 .argument__image {
