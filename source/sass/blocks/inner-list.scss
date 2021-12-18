@@ -31,6 +31,10 @@
   bottom: 25px;
   width: 100%;
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .inner-list__item:nth-child(2) {
@@ -44,6 +48,10 @@
   bottom: 25px;
   width: 100%;
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 
