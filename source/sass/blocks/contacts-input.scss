@@ -1,13 +1,23 @@
 .contacts-input {
   width: 280px;
-  background: linear-gradient(to right, #F2F2F2 79%, #E6E6E6 21%);
+  background: linear-gradient(to right, #f2f2f2 79%, #e6e6e6 21%);
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    background: linear-gradient(to right, #f2f2f2 91%, #e6e6e6 9%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
+    background: linear-gradient(to right, #f2f2f2 79%, #e6e6e6 21%);
+  }
 }
 
 input.contacts-input::after {
   display: block;
   position: absolute;
   content: "";
-  background-image: url(./img/icon/mail.svg);
+  background-image: url("../img/icon/mail.svg");
   width: 25px;
   height: 25px;
   border: none;
@@ -18,18 +28,4 @@ input.contacts-input::after {
   color: #000000;
   font-size: 18px;
   font-weight: bold;
-}
-
-@media (min-width: $tablet-width) {
-  .contacts-input {
-    width: 648px;
-    background: linear-gradient(to right, #F2F2F2 91%, #E6E6E6 9%);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts-input {
-    width: 315px;
-    background: linear-gradient(to right, #F2F2F2 79%, #E6E6E6 21%);
-  }
 }

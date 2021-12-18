@@ -1,10 +1,20 @@
 .sights-list {
   @include zero-list;
-  margin-bottom: 46px;
-  width: 280px;
   margin: 0 auto;
+  width: 280px;
+  margin-bottom: 46px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 468px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .sights-list__item {
@@ -12,6 +22,12 @@
   padding: 0;
   margin-bottom: 34px;
   margin-left: -14px;
+
+  @media (min-width: $tablet-width) {
+    width: 215px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+  }
 }
 
 .sights-list__label {
@@ -45,29 +61,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .sights-list {
-    width: 468px;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  .sights-list__item {
-    width: 215px;
-    margin: 0 auto;
-    margin-bottom: 42px;
-  }
-
   .sights-list__item:last-child {
     margin-bottom: 0;
   }
 
   .sights-list__item:nth-child(3) {
     margin-bottom: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .sights-list {
-    width: auto;
   }
 }

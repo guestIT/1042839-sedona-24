@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/favicon/favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon.png">
   <link rel="manifest" href="img/favicon/manifest.webmanifest">
+  <script src="./js/script.js" defer></script>
   </head>
   <body class="page-body">
     <header class="page-header">
       <div class="page-wrapper">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="открыть меню"></button>
         <div class="main-nav__wrapper">
           <a class="page-header__logo">
@@ -43,11 +44,7 @@
     <main class="page-main">
       <section class="greeting">
         <div class="greeting__wrapper">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/background/back-desktop-index@1x.jpg 1x, img/background/back-desktop-index@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/background/back-tablet-index@1x.jpg 1x, img/background/back-tablet-index@2x.jpg 2x">
-            <img class="greeting__text" src="img/background/back-mobile-index@1x.jpg" width="320" height="308" alt="Приветствие сайта Седона" srcset="img/background/back-mobile-index@2x.jpg 2x">
-          </picture>
+            <img class="greeting__text" src="img/icon/text-index@1x.svg" width="320" height="308" alt="Приветствие сайта Седона">
         </div>
       </section>
       <section class="features">
@@ -59,7 +56,7 @@
       <section class="arguments">
         <h2 class="visually-hidden">Список преимуществ</h2>
         <ul class="arguments__list">
-          <li class="arguments__item argument argument--white">
+          <li class="arguments__item argument argument--illustration">
             <div class="argument__wrapper">
             <h2 class="argument__title">Настоящий городок</h2>
             <span class="argument__number">— №1 —</span>
@@ -73,21 +70,21 @@
           </li>
           <li class="arguments__item argument argument--standart">
             <ul class="argument__grid"> <!--начало списка-->
-          <li class="argument__advice">
+          <li class="argument__advice argument__advice--home">
             <h2 class="argument__title">Жилье</h2>
-            <p class="argument__text">Рекомендуем пожить в<br> настоящем мотеле, все<br> как в кино!</p>
+            <p class="argument__text">Рекомендуем пожить в<br> настоящем мотеле, все как в кино!</p>
           </li>
-          <li class=argument__advice>
+          <li class="argument__advice argument__advice--gift">
             <h2 class="argument__title">Сувениры</h2>
-            <p class="argument__text">Не только китайского, но<br> и местного производства!</p>
+            <p class="argument__text">Не только китайского, но и местного производства!</p>
           </li>
-          <li class=argument__advice>
+          <li class="argument__advice argument__advice--food">
             <h2 class="argument__title">Еда</h2>
-            <p class="argument__text">Всегда заказывайте<br> фирменный бургер,<br> Вы не разочаруетесь!</p>
+            <p class="argument__text">Всегда заказывайте<br> фирменный бургер, Вы не разочаруетесь!</p>
           </li>
         </li>
           </ul> <!--конец вложенного списка-->
-            <li class="arguments__item argument argument--white">
+            <li class="arguments__item argument argument--illustration">
               <div class="argument__wrapper">
                 <h2 class="argument__title">Там есть мост дьявола</h2>
                 <span class="argument__number">— №2 —</span>

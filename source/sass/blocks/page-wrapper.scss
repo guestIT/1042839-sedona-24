@@ -1,8 +1,5 @@
 .page__wrapper {
   @include zero-margin;
-}
-
-.page__wrapper {
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {

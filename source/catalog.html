@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" href="img/favicon/favicon.png">
     <link rel="manifest" href="img/favicon/manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js" defer></script>
   </head>
   <body class="page-body body">
     <header class="page-header header">
@@ -20,7 +21,7 @@
         <a class="page-header__logo--hidden" href="index.html">
           <img src="img/icon/logotype-desktop.png" width="187" height="97" alt="логотип сайта седона">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -44,13 +45,9 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="greeting">
+      <section class="greeting greeting--form-catalog"><!--Модно ли таким образом добавить модификатор?-->
         <div class="greeting__wrapper">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/background/back-desktop-catalog@1x.jpg 1x, img/background/back-desktop-catalog@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/background/back-tablet-catalog@1x.jpg 1x, img/background/back-tablet-catalog@2x.jpg 2x">
-            <img class="greeting__text" src="img/background/back-mobile-catalog@1x.jpg" width="320" height="308" alt="Приветствие сайта Седона" srcset="img/background/back-mobile-catalog@2x.jpg 2x">
-          </picture>
+            <img class="greeting__text" src="img/icon/text-sedona-form.svg" width="320" height="308" alt="Приветствие сайта Седона">
         </div>
       </section>
       <section class="gallery">
@@ -104,7 +101,7 @@
                 </picture>
               </a>
             </div>
-            <div class="photo__signature photo__signature--gray">
+            <div class="photo__signature photo__signature--gray"><!--Фото сигнатуре грей можно удалить, на классе нет стилей-->>
               <h3 class="photo__title">Дорога на север</h3>
               <p class="photo__author">Автор фото: Петр</p>
               <button class="btn btn__lickes btn__lickes--gray"></button>

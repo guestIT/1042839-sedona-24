@@ -1,40 +1,74 @@
+// .main-nav--nojs {
+//   .main-nav__toggle {
+//     display: none;
+//   }
+
+//   .main-nav__list {
+//     display: block;
+//   }
+// } //js не приезжает меню открыто всегда. возможно дело в классах.
+
 .main-nav {
-  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 17px 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
 }
 
 .main-nav__toggle {
-  display: block;
-  position: absolute;
   @include zero-margin;
+  display: block;
+  position: relative;
   width: 23px;
   height: 22px;
-  top: 20px;
-  left: 85%;
   border: none;
   cursor: pointer;
-  background-image: url('../img/icon/icon-menu.svg');
-  background-color: inherit;
+  background-image: url("../img/icon/icon-menu.svg");
+  background-color: transparent;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.main-nav__wrapper {
+.main-nav__toggle:hover {
+  opacity: 0.6;
+}
 
+.main-nav__toggle:active {
+  opacity: 0.3;
+}
+
+.main-nav__toggle--active {
+  background-image: url("../img/icon/icon-menu-closed.svg");
+}
+
+.main-nav__toggle--active:hover {
+  opacity: 0.6;
+}
+
+.main-nav__toggle--active:active {
+  opacity: 0.3;
 }
 
 .main-nav__list {
+  @include zero-list;
+  display: none;
   background-color: #81b3d2;
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
   text-align: center;
-  @include zero-list;
-}
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 
-@media (min-width: $tablet-width) {
-  .main-nav {
-    background-color: #ffffff;
-  }
-
-  .main-nav__toggle {
-    display: none;
+  &--open {
+    display: block;
   }
 }

@@ -1,20 +1,42 @@
-.argument {
-
-}
-
 .argument__title {
   @include zero-margin;
   font-size: 18px;
   line-height: 26px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 28px;
+  }
 }
 
 .argument__text {
+  @include zero-margin;
   padding-bottom: 24px;
   margin-bottom: 33px;
 }
 
-.argument--white {
+.argument--illustration {
   @include blue-block;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    max-height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.argument--illustration:first-child {
+  padding-top: 55px;
+}
+
+.argument--illustration:nth-last-of-type(2) {
+  padding-top: 39px;
 }
 
 .argument--standart {
@@ -26,12 +48,45 @@
   padding: 0;
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+    padding: 0;
+    width: 672px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 100px;
+    margin: 0 auto;
+    padding: 0;
+    width: 1076px;
+  }
 }
 
 .argument__advice {
   position: relative;
-  padding-top: 40px;
-  padding-left: 69px;
+  padding-top: 35px;
+  padding-left: 49px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 3;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .argument__advice:nth-child(2) {
+    grid-column: 3 / 4;
+  }
 }
 
 .argument__advice:nth-child(3) {
@@ -42,99 +97,16 @@
   display: block;
   content: "";
   position: absolute;
-  background-image: url('../img/icon/icon-house.svg');
   background-repeat: no-repeat;
   background-size: contain;
   width: 40px;
   height: 40px;
-  left: 18px;
-}
+  left: 0;
 
-.argument__advice:nth-child(2)::before {
-  background-image: url('../img/icon/icon-gift.svg');
-}
-
-.argument__advice:nth-child(3)::before {
-  background-image: url('../img/icon/icon-burger.svg');
-}
-
-li.argument--gray {
-  background-color: #eeeeee;
-}
-
-.argument__number {
-  margin: 0;
-  padding: 0;
-}
-
-.argument__description {
-  @include zero-margin;
-  text-align: center;
-}
-
-.argument__wrapper {
-
-}
-
-.argument__image {
-  display: block;
-  width: 100%;
-}
-
-.argument__text {
-  @include zero-margin;
-}
-
-@media (min-width: $tablet-width) {
-  .argument--white {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    max-height: 256px;
-  }
-
-  .argument__title {
-    padding-bottom: 28px;
-  }
-
-  .argument__image {
-    max-height: 256px;
-  }
-
-  .argument__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 0 auto;
-    padding: 0;
-    width: 672px;
-    //padding: 40px 41px 42px 33px;
-  }
-
-  .argument__grid--gray {
-    //display: flex;
-    //justify-content: space-around;
-    //flex-direction: column;
-    //padding: 0 45px;
-  }
-
-  .argument__advice {
-    grid-row: 2 / 3;
-    text-align: center;
-    position: relative;
-    padding: 0;
-    margin: 0;
-  }
-
-  .argument__advice:nth-child(2) {
-    grid-column: 3 / 4;
-  }
-
-  .argument__advice::before {
+  @media (min-width: $tablet-width) {
     display: block;
     content: "";
     position: absolute;
-    background-image: url('../img/icon/icon-house.svg');
     background-repeat: no-repeat;
     width: 75px;
     height: 72px;
@@ -142,30 +114,42 @@ li.argument--gray {
     left: -37px;
     top: -50%;
   }
-
-  .argument__advice:nth-child(2)::before {
-    background-image: url('../img/icon/icon-gift.svg');
-  }
-
-  .argument__advice:nth-child(3)::before {
-    background-image: url('../img/icon/icon-burger.svg');
-  }
 }
 
-@media (min-width: $desktop-width) {
-  .argument--white {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
+.argument__advice--home::before {
+  background-image: url("../img/icon/icon-house.svg");
+}
 
-  .argument__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 100px;
-    margin: 0 auto;
-    padding: 0;
-    width: 1076px;
-    //padding: 40px 41px 42px 33px;
+.argument__advice--gift::before {
+  background-image: url("../img/icon/icon-gift.svg");
+}
+
+.argument__advice--food::before {
+  background-image: url("../img/icon/icon-burger.svg");
+}
+
+li.argument--gray {
+  background-color: #eeeeee;
+}
+
+.argument__number {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.argument__description {
+  @include zero-margin;
+  text-align: center;
+  padding: 0 28px 39px;
+}
+
+.argument__image {
+  display: block;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-height: 256px;
   }
 }

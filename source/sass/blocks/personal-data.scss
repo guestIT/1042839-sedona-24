@@ -1,39 +1,32 @@
-.personal-data {
-
-}
-
 .personal-data::placeholder {
   color: #000000;
   font-size: 18px;
   font-weight: bold;
 }
 
-@media (min-width: $tablet-width) {
-  #name {
-    width: 216px;
-  }
+// #name {
+//   @media (min-width: $tablet-width) {
+//   width: 216px;
 
-  #surname {
-    width: 178px;
-  }
+//   @media (min-width: $desktop-width) {
+//     width: 350px;
+//   }
+// }
 
-  #lastname {
-    width: 180px;
-  }
-}
+// #surname {
+//   @media (min-width: $tablet-width) {
+//   width: 178px;
 
-@media (min-width: $desktop-width) {
-  #name {
-    width: 350px;
-  }
+//   @media (min-width: $desktop-width) {
+//     width: 312px;
+//   }
+// }
 
-  #surname {
-    width: 312px;
-  }
+// #lastname {
+//   @media (min-width: $tablet-width) {
+//     width: 180px;
 
-  #lastname {
-    width: 314px;
-  }
-}
-
-
+//   @media (min-width: $desktop-width) {
+//     width: 314px;
+//   }
+// }

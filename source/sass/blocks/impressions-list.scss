@@ -1,10 +1,20 @@
 .impressions-list {
   @include zero-list;
+  margin: 0 auto;
   margin-bottom: 50px;
   width: 280px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-right: 0;
+  }
 }
 
 .impressions-list__item {
@@ -12,6 +22,10 @@
   padding: 0;
   margin-bottom: 21px;
   margin-left: -14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .impressions-list__label {
@@ -45,26 +59,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .impressions-list {
-    margin: 0;
-    margin-right: 90px;
-  }
-
-  .impressions-list__item {
-    margin-bottom: 22px;
-  }
-
   .impressions-list__item:last-child {
     margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .impressions-list {
-    position: relative;
-    margin-right: 0;
-  }
-
   .impressions-list::after {
     display: block;
     position: absolute;
@@ -73,6 +73,6 @@
     height: 292px;
     left: 480px;
     top: -80px;
-    background-color: #dBdBdB;
+    background-color: #dbdbdb;
   }
 }

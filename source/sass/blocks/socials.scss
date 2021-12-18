@@ -1,13 +1,13 @@
-.socials {
-
-}
-
 .socials__list {
   @include zero-list;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .socials__item {
@@ -16,18 +16,6 @@
 
 .socials__item:last-child {
   margin-right: 0;
-}
-
-.socials__item--twitter {
-
-}
-
-.socials__item--facebook {
-
-}
-
-.socials__item--youtube {
-
 }
 
 .socials__link {
@@ -52,13 +40,7 @@
 }
 
 .socials__link:active {
-  background-color: #5496Bd;
+  background-color: #5496bd;
   fill-opacity: 0.3;
   transition: color 0.2s ease, opacity 0.2s ease;
-}
-
-@media (min-width: $tablet-width) {
-  .socials__list {
-  margin-bottom: 0;
-  }
 }
