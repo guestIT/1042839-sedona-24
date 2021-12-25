@@ -22,6 +22,10 @@
 .inner-list__item:first-child {
   position: relative;
   padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+  }
 }
 
 .inner-list__item:first-child::after {
@@ -31,6 +35,10 @@
   bottom: 25px;
   width: 100%;
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .inner-list__item:nth-child(2) {
@@ -44,6 +52,10 @@
   bottom: 25px;
   width: 100%;
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 
@@ -72,13 +84,27 @@
 .inner-list__title {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 155px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 .inner-list__number {
   display: block;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 21px;
+  }
 }
 
 .inner-list__text {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    line-height: 21px;
+  }
 }

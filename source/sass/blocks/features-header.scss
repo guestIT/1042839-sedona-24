@@ -9,4 +9,8 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }

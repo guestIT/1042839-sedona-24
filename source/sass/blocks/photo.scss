@@ -57,8 +57,7 @@
 .photo__link--img {
   display: block;
 
-    @media (min-width: $desktop-width) {
-      max-height: 400px;
-    }
+  @media (min-width: $desktop-width) {
+    max-height: 400px;
   }
 }
