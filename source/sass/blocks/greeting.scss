@@ -26,27 +26,30 @@
   display: block;
   height: 58px;
   width: 100%;
-  background-image: url("../img/icon/triangle-mobile-catalog.svg");
+  background-image: url("../img/icon/triangle-desktop.svg");
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   left: 0;
+  background-repeat: no-repeat;
+  background-size: 1200px 57px;
+  background-position: center;
 
-  @media (min-width: $tablet-width) {
-    content: "";
-    z-index: 10;
-    bottom: 0;
-    height: 57px;
-    background-image: url("../img/icon/triangle-tablet-form.svg");
-  }
+  // @media (min-width: $tablet-width) {
+  //   content: "";
+  //   z-index: 10;
+  //   bottom: 0;
+  //   height: 57px;
+  //   background-image: url("../img/icon/triangle-tablet-form.svg");
+  // }
 
-  @media (min-width: $desktop-width) {
-    content: "";
-    z-index: 10;
-    bottom: 0;
-    width: 100%;
-    height: 57px;
-    background-image: url("../img/icon/triangle-desktop.svg");
-  }
+  // @media (min-width: $desktop-width) {
+  //   content: "";
+  //   z-index: 10;
+  //   bottom: 0;
+  //   width: 100%;
+  //   height: 57px;
+  //   background-image: url("../img/icon/triangle-desktop.svg");
+  // }
 }
 
 .greeting--form-catalog {
