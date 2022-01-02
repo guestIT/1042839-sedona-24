@@ -70,10 +70,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 43px 43px 62px 42px;
+    max-width: 290px;
+    margin: 0 auto;
+    // padding: 43px 43px 62px 42px;
   }
 }
 
@@ -106,5 +105,9 @@
 
   @media (min-width: $tablet-width) {
     line-height: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
   }
 }
