@@ -1,6 +1,7 @@
 .contacts-input {
   width: 280px;
   background: linear-gradient(to right, #f2f2f2 79%, #e6e6e6 21%);
+  padding-right: 60px;
 
   @media (min-width: $tablet-width) {
     width: 648px;
@@ -11,17 +12,6 @@
     width: 315px;
     background: linear-gradient(to right, #f2f2f2 79%, #e6e6e6 21%);
   }
-}
-
-input.contacts-input::after {
-  display: block;
-  position: absolute;
-  content: "";
-  background-image: url("../img/icon/mail.svg");
-  width: 25px;
-  height: 25px;
-  border: none;
-  background-repeat: no-repeat; //разобраться
 }
 
 .contacts-input::placeholder {

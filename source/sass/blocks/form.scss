@@ -57,6 +57,7 @@
   margin: 0 auto;
   margin-bottom: 25px;
   display: block;
+  position: relative;
   font: inherit;
   font-style: normal;
   font-weight: bold;
@@ -76,6 +77,23 @@
     margin-bottom: 60px;
   }
 }
+
+// .form__subtitle::before {
+//   display: block;
+//   position: absolute;
+//   overflow-x: hidden;
+//   width: 100vw;
+//   content: "";
+//   background-color: #e5e5e5;
+//   margin-left: calc(50% - 50vw);
+//   height: 1px;
+//   left: 0;
+//   top: -18px;
+
+  // @media (min-width: $tablet-width) {
+  //   display: none;
+  // }
+// }
 
 .form__footnote {
   display: none;
@@ -103,6 +121,10 @@
     margin: 0 auto;
     margin-bottom: 47px;
     margin-top: 51px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
   }
 
   .form__subtitle--emotions {

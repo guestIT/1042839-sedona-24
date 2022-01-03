@@ -43,15 +43,33 @@
 
 .form-list__span {
   display: block;
+  position: relative;
   margin-left: 21px;
   margin-bottom: 15px;
+}
+
+.form-list__span::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border: none;
+  right: 12px;
+  bottom: -62px;
+  background-image: url("../img/icon/phone.svg");
+  background-repeat: no-repeat;
+}
+
+.form-list__span--email::after {
+  background-image: url("../img/icon/mail.svg");
 }
 
 .form-list__span--hidden {
   display: none;
 
   @media (min-width: $desktop-width) {
-    display: contents;
+    display: block;
   }
 }
 
