@@ -49,18 +49,43 @@
 
 .impressions-list__label input[type="radio"] + .impressions-list__element {
   display: block;
-  width: 56px;
-  height: 56px;
-  background-image: url("../img/icon/radio-hover.svg");
-  background-repeat: no-repeat;
+  position: relative;
+  content: "";
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  // background-image: url("../img/icon/radio-hover.svg");
+  // background-repeat: no-repeat;
   background-position: center;
   margin-right: 23px;
-  opacity: 0.4;
+  // opacity: 0.4;
   transition: opacity 0.2s ease;
 }
 
-.impressions-list__label input[type="radio"]:checked + .impressions-list__element {
-  background-image: url("../img/icon/radio-hover-on.svg");
+.impressions-list__label input[type="radio"] + .impressions-list__element:hover {
+  background-color: #e5e5e5;
+}
+
+.impressions-list__label input[type="radio"] + .impressions-list__element:active {
+  background-color: #d5d5d5;
+}
+
+.impressions-list__label input[type="radio"]:checked + .impressions-list__element::after {
+  // background-image: url("../img/icon/radio-hover-on.svg");
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #333333;
+  z-index: 2;
 }
 
 // @media (min-width: $tablet-width) {

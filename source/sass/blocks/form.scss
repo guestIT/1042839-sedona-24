@@ -97,7 +97,7 @@
 .form__footnote {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: block;
     text-align: end;
     align-self: center;
