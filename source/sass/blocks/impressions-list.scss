@@ -75,12 +75,12 @@
   // background-image: url("../img/icon/radio-hover-on.svg");
   display: block;
   position: absolute;
+  content: "";
   margin: auto;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  content: "";
   width: 18px;
   height: 18px;
   border-radius: 50%;
