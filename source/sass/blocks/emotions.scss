@@ -7,14 +7,20 @@
   background-color: #f2f2f2;
   border: none;
   resize: none;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     width: 648px;
   }
 }
 
+.emotions::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
 .emotions[placeholder] {
-  padding: 13px 0 0 22px;
+  padding: 13px 22px 0 22px;
   font-size: 18px;
   font-weight: bold;
   color: #000000;
@@ -22,5 +28,9 @@
 
   @media (min-width: $tablet-width) {
     width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
   }
 }

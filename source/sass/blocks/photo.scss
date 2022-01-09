@@ -13,19 +13,30 @@
 
   @media (min-width: $tablet-width) {
     background-color: #f2f2f2;
-    padding: 10px 0 20px 10px;
+    padding: 22px 0 15px 20px;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 10px 0 20px 10px;
+    padding: 10px 0 10px 10px;
     margin-top: -78px;
   }
 }
 
+// @media (min-width: $tablet-width) {
+//   .photo__signature--gray {
+//     background-color: #eaeaea;
+
+//     @media (min-width: $desktop-width) {
+//       background-color: rgba(0, 0, 0, 0.3);
+//   }
+// }
+
 .photo__title {
   @include zero-margin;
   text-align: left;
+  font-size: 14px;
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
@@ -34,7 +45,7 @@
 
 .photo__author {
   @include zero-margin;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   text-transform: capitalize;
   text-align: left;
   font-size: 14px;
@@ -49,6 +60,75 @@
   }
 }
 
+.photo__btn-like {
+  display: block;
+  margin: 0;
+  padding: 5px;
+  text-align: left;
+  width: 23px;
+  height: 21px;
+  background-color: #ffffff;
+  background-image: url("../img/icon/like-icon.svg");
+  background-repeat: no-repeat;
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/icon/like-icon-white.svg");
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.photo__btn-like:last-child {
+  margin-bottom: 54px;
+}
+
+.photo__btn {
+  display: flex;
+  gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    max-width: 84px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo__btn-like {
+    position: absolute;
+    background-color: #f2f2f2;
+  }
+
+  .photo__btn-like--gray {
+    background-color: initial;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__btn-like {
+    background-image: url("../img/icon/like-icon-white.svg");
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.photo__btn-counter {
+  display: block;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 32px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
 // @media (min-width: $tablet-width) {
 //   .photo__signature--gray {
 //     background-color: #eaeaea;

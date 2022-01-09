@@ -2,6 +2,26 @@
   text-align: center;
 }
 
+.photos__item {
+  position: relative;
+}
+
+.photos__item::after {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  content: "";
+  background-color: #e5e5e5;
+  margin-left: calc(50% - 50vw);
+  height: 1px;
+  bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .photos__list {
   @include zero-list;
   margin: 0 20px;
@@ -29,7 +49,11 @@
   }
 
   .photos__item:last-child {
-    margin-bottom: 53px;
+    margin-bottom: 59px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 63px;
+    }
   }
 }
 

@@ -1,48 +1,126 @@
 .popup {
-  //display: none;
-  position: relative;
-  margin-top: 150px; //убрать позже
-  margin-bottom: 30px; //убрать, сделал для визуального разделения
-  top: 50%;
+  display: none;
+  position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 320px;
   border: none;
   background: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   z-index: 10;
 }
 
 .popup--warning {
   height: 280px;
+  top: 1610px;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    height: 347px;
+    top: 1440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 1510px;
+  }
 }
 
 .popup--send {
   height: 323px;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    height: 347px;
+    top: 1300px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 1120px;
+  }
 }
 
 .popup__head {
   @include zero-margin;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 51px;
+    margin-bottom: 33px;
+    max-width: 250px;
+  }
+}
+
+.popup__head--send {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 444px;
+    margin-top: 55px;
+    margin-bottom: 27px;
+  }
 }
 
 .popup__description {
   @include zero-margin;
+  margin: 0 auto;
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 22px;
+  max-width: 237px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+    max-width: 307px;
+  }
+}
+
+.popup__description--send {
+  margin: 0 auto;
+  margin-bottom: 29px;
+  max-width: 244px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 420px;
+    margin-bottom: 32px;
+  }
 }
 
 .popup__warning {
   display: block;
   text-align: center;
   width: 180px;
+  font-size: 18px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 272px;
+  }
 }
 
 .popup__closed {
   display: block;
   width: 280px;
+  font-size: 18px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
+}
+
+
+.popup__background {
+  width: 280px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    padding: 44px 0;
+  }
 }
