@@ -88,6 +88,10 @@
   z-index: 2;
 }
 
+.impressions-list__label input[type="radio"]:checked + .impressions-list__element:active::after {
+  opacity: 0.3;
+}
+
 // @media (min-width: $tablet-width) {
 //   .impressions-list__item:last-child {
 //     margin-bottom: 0;
