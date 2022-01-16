@@ -14,11 +14,15 @@
   padding: 5px;
 }
 
-.copyright__icon:hover {
+.copyright__icon-htmlacademy {
+  fill: #000000;
+}
+
+.copyright__icon-htmlacademy:hover {
   fill: #81b3d2;
 }
 
-.copyright__icon:active {
+.copyright__icon-htmlacademy:active {
   fill: #000000;
   fill-opacity: 0.3;
 }
