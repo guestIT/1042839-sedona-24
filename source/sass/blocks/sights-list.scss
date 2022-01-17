@@ -14,6 +14,7 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -27,6 +28,10 @@
     width: 215px;
     margin: 0 auto;
     margin-bottom: 42px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
 

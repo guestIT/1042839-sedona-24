@@ -1,21 +1,21 @@
-.btn {
-  @include btn;
-}
+// .btn {
+//   @include btn;
+// }
 
-.btn--review {
-  display: block;
-  width: 280px;
-  margin: 0 auto;
+// .btn--review {
+//   display: block;
+//   width: 280px;
+//   margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    width: 324px;
-    margin-left: 0;
-  }
+//   @media (min-width: $tablet-width) {
+//     width: 324px;
+//     margin-left: 0;
+//   }
 
-  @media (min-width: $desktop-width) {
-    width: 480px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 480px;
+//   }
+// }
 
 // .btn__lickes {
 //   display: block;
