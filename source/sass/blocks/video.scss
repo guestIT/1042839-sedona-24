@@ -163,12 +163,25 @@
   padding: 3px;
 }
 
-.video__button--icon path:hover {
-  fill: #333333;
+.video__button-control {
+  fill: #5c6870;
+
+  @media (min-width: $tablet-width) {
+    fill: #ffffff;
+  }
 }
 
-.video__button--icon path:active {
-  fill-opacity: 0.3;
+.video__button-control:hover {
+  fill: #333333;
+
+  @media (min-width: $tablet-width) {
+    fill: #ffffff;
+    opacity: 0.6;
+  }
+}
+
+.video__button-control:active {
+  opacity: 0.3;
 }
 
 .video__button--hidden {
@@ -203,10 +216,6 @@
     position: absolute;
     margin: 0;
     right: 92px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
   }
 }
 
