@@ -59,3 +59,13 @@
     @content;
   }
 }
+
+@mixin form-line {
+  display: block;
+  content: "";
+  width: inherit;
+  height: 1px;
+  background-color: #dbdbdb;
+  bottom: 12px;
+  position: absolute;
+}

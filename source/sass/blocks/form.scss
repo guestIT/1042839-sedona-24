@@ -142,11 +142,18 @@
   .form__subtitle--contacts {
     margin: 0 auto;
     margin-bottom: 20px;
+    position: relative;
+    width: 100%;
 
     @media (min-width: $desktop-width) {
       margin-top: 0;
       margin-bottom: 70px;
-      position: relative;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .form__subtitle--contacts::after {
+      @include form-line;
     }
   }
 
@@ -158,6 +165,14 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 0;
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .form__subtitle--sights::after {
+      @include form-line;
     }
   }
 
@@ -165,77 +180,28 @@
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 54px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      position: relative;
+    }
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form__subtitle--contacts::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 280px;
-    height: 1px;
-    left: -340px;
-    top: 50%;
-    background-color: #dbdbdb;
-  }
-
-  .form__subtitle--contacts::after {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 280px;
-    height: 1px;
-    right: -340px;
-    top: 50%;
-    background-color: #dbdbdb;
-  }
-
-  .form__subtitle--sights {
-    position: relative;
-  }
-
-  .form__subtitle--sights::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 280px;
-    height: 1px;
-    left: -340px;
-    top: 50%;
-    background-color: #dbdbdb;
-  }
-
-  .form__subtitle--sights::after {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 280px;
-    height: 1px;
-    right: -340px;
-    top: 50%;
-    background-color: #dbdbdb;
-  }
-
-  .form__subtitle--emotions::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 280px;
-    height: 1px;
-    left: -340px;
-    top: 50%;
-    background-color: #dbdbdb;
-  }
-
+@media (min-width: $tablet-width) {
   .form__subtitle--emotions::after {
+    @include form-line;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__subtitle-span {
     display: block;
-    position: absolute;
-    content: "";
-    width: 280px;
-    height: 1px;
-    right: -340px;
-    top: 50%;
-    background-color: #dbdbdb;
+    width: 404px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    text-align: center;
   }
 }
