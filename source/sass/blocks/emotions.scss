@@ -6,8 +6,8 @@
   margin-bottom: 51px;
   background-color: #f2f2f2;
   border: none;
-  resize: none;
   outline: none;
+  resize: vertical;
 
   @media (min-width: $tablet-width) {
     width: 648px;

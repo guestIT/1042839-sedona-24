@@ -31,14 +31,7 @@
 
 .form-list__label {
   align-self: center;
-}
-
-#surname { //нежелательное использование селектора #
-  width: 193px;
-}
-
-#lastname {
-  width: 194px;
+  margin-right: 14px;
 }
 
 .form-list__span {
@@ -47,17 +40,22 @@
   margin-left: 21px;
   margin-bottom: 15px;
 
-  // @media (min-width: $desktop-width) {
-  //   margin-left: 0;
-  //   margin-bottom: 0;
-  //   float: left;
-  //   white-space: nowrap;
-  //   margin-right: 18px;
-  // }
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 0;
+    align-items: center;
+    width: max-content;
+    margin-right: 18px;
+  }
 }
 
 .form-list__label--contacts {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .form-list__label--contacts::after {
