@@ -55,11 +55,8 @@
   height: 53px;
   border-radius: 50%;
   background-color: #f2f2f2;
-  // background-image: url("../img/icon/radio-hover.svg");
-  // background-repeat: no-repeat;
   background-position: center;
   margin-right: 23px;
-  // opacity: 0.4;
   transition: opacity 0.2s ease;
 }
 
@@ -72,7 +69,6 @@
 }
 
 .impressions-list__label input[type="radio"]:checked + .impressions-list__element::after {
-  // background-image: url("../img/icon/radio-hover-on.svg");
   display: block;
   position: absolute;
   content: "";
@@ -91,12 +87,6 @@
 .impressions-list__label input[type="radio"]:checked + .impressions-list__element:active::after {
   opacity: 0.3;
 }
-
-// @media (min-width: $tablet-width) {
-//   .impressions-list__item:last-child {
-//     margin-bottom: 0;
-//   }
-// }
 
 @media (min-width: $desktop-width) {
   .impressions-list::after {

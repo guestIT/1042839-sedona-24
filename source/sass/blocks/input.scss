@@ -1,10 +1,11 @@
-input {
+.input {
   display: block;
   box-sizing: border-box;
   background-color: #f2f2f2;
   border: none;
   height: 58px;
   outline: none;
+  flex-grow: 1;
 }
 
 input[type="text"] {
