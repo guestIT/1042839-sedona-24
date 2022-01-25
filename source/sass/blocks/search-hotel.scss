@@ -7,14 +7,16 @@
   font-size: 21px;
   line-height: 26px;
   padding-top: 33px;
-  padding-bottom: 33px;
+  padding-bottom: 22px;
 }
 
 .search-hotel__description {
   @include zero-margin;
+  width: 280px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 24px;
-  padding-bottom: 27px;
+  padding-bottom: 28px;
 }
 
 .search-hotel__button {

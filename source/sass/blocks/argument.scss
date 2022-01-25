@@ -2,13 +2,21 @@
   @include zero-margin;
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 25px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
     max-width: 151px;
     font-size: 21px;
     line-height: 26px;
+  }
+}
+
+.argument__title--standart-back {
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -47,7 +55,7 @@
 
 .argument__advice {
   position: relative;
-  padding: 35px 0 0 49px;
+  padding: 0 0 0 50px;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
@@ -59,7 +67,7 @@
 }
 
 .argument__advice:last-child {
-  padding-bottom: 35px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: initial;
@@ -91,16 +99,38 @@
   }
 }
 
+.argument__advice--home {
+  margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: initial;
+  }
+}
+
+.argument__advice--gift,
+.argument__advice--food {
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 0;
+  }
+}
+
 .argument__advice--home::before {
   background-image: url("../img/icon/icon-house.svg");
 }
 
 .argument__advice--gift::before {
   background-image: url("../img/icon/icon-gift.svg");
+  left: 4px;
+  top: 16px;
 
   @media (min-width: $tablet-width) {
     width: 64px;
     height: 75px;
+    left: initial; //проверить не сломается ли
+    top: initial;
   }
 }
 
@@ -121,13 +151,13 @@ li.argument--gray {
   display: block;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .argument__description {
   @include zero-margin;
   text-align: center;
-  padding: 0 28px 39px;
+  padding: 0 28px 33px;
 
   @media (min-width: $tablet-width) {
     line-height: 21px;
