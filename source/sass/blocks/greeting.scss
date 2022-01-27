@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    margin-bottom: 59px;
+    margin-bottom: 44px;
     background-image: url("../img/background/back-tablet-index@1x.jpg");
   }
 
@@ -26,11 +26,11 @@
   width: 100%;
   background-image: url("../img/icon/triangle-desktop.svg");
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   background-repeat: no-repeat;
   background-size: 1200px 57px;
-  background-position: center;
+  background-position: top;
 }
 
 .greeting--form-catalog {
@@ -73,7 +73,7 @@
   padding: 90px 20px 85px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 153px 91px;
+    padding: 98px 153px 91px;
   }
 
   @media (min-width: $desktop-width) {

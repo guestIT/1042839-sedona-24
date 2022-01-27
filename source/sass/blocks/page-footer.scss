@@ -5,7 +5,7 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
-    padding: 31px 0;
+    padding: 10px 0; //было 31
     justify-content: space-around;
     align-items: center;
   }

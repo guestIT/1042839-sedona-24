@@ -8,6 +8,12 @@
   line-height: 26px;
   padding-top: 33px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-top: 55px;
+    padding-bottom: 33px;
+  }
 }
 
 .search-hotel__description {
@@ -17,6 +23,12 @@
   font-size: 14px;
   line-height: 24px;
   padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 397px;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .search-hotel__button {
@@ -33,7 +45,7 @@
   @media (min-width: $tablet-width) {
     width: 458px;
     margin: 0 auto;
-    margin-bottom: 72px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {

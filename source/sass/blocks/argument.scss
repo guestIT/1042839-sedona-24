@@ -9,6 +9,7 @@
     max-width: 151px;
     font-size: 21px;
     line-height: 26px;
+    margin-bottom: 12px;
   }
 }
 
@@ -16,13 +17,28 @@
   margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 24px;
   }
 }
 
 .argument__text {
   @include zero-margin;
   line-height: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .argument__text--small-box {
+    width: 158px;
+    margin: 0 auto;
+  }
+
+  .argument__text--middle-box {
+    width: 185px;
+  }
+
+  .argument__text--large-box {
+    width: 200px;
+  }
 }
 
 .argument--standart {
@@ -37,8 +53,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 672px;
-    gap: 70px;
+    width: 701px;
+    gap: 73px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +66,20 @@
 @media (min-width: $tablet-width) {
   .argument__wrapper--order {
     order: 2;
+  }
+
+  .argument__wrapper--order p {
+    padding-bottom: 0;
+    width: 184px;
+  }
+
+  .argument__wrapper--order h2 {
+    margin-bottom: 10px;
+    padding-top: 9px;
+  }
+
+  .argument__wrapper--order span {
+    margin-bottom: 26px;
   }
 }
 
@@ -70,7 +100,7 @@
   padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: initial;
+    padding-bottom: 0;
   }
 }
 
@@ -103,7 +133,7 @@
   margin-top: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-top: initial;
+    margin-top: 0;
   }
 }
 
@@ -112,13 +142,16 @@
   padding-top: 26px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
-    padding-left: 0;
+    padding-top: 158px;
   }
 }
 
 .argument__advice--home::before {
   background-image: url("../img/icon/icon-house.svg");
+
+  @media (min-width: $tablet-width) {
+    left: 91px;
+  }
 }
 
 .argument__advice--gift::before {
@@ -129,8 +162,8 @@
   @media (min-width: $tablet-width) {
     width: 64px;
     height: 75px;
-    left: initial; //проверить не сломается ли
-    top: initial;
+    left: 50%;
+    top: 60px;
   }
 }
 
@@ -140,6 +173,8 @@
   @media (min-width: $tablet-width) {
     width: 76px;
     height: 68px;
+    left: 90px;
+    top: 63px;
   }
 }
 
@@ -152,6 +187,10 @@ li.argument--gray {
   margin: 0;
   padding: 0;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .argument__description {

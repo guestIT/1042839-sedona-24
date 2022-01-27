@@ -6,11 +6,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
     margin: 0 auto;
     width: 520px;
     height: 110px;
-    margin-bottom: 28px;
+    margin-bottom: 50px; //бфло 28
   }
 }
 
@@ -25,5 +25,6 @@
 
   @media (min-width: $tablet-width) {
     width: max-content;
+    padding-left: 18px;
   }
 }
