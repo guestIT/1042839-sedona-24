@@ -16,7 +16,7 @@
     // padding-top: 78px;
     // padding-bottom: 90px;
     padding-top: 21px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     margin-bottom: 55px;
     background-image: url("../img/background/back-desktop-index@1x.jpg");
   }
@@ -41,17 +41,17 @@
   background-image: url("../img/background/back-mobile-form@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 36px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    margin-bottom: 43px;
+    margin-bottom: 62px;
     background-image: url("../img/background/back-tablet-form@1x.jpg");
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    margin-bottom: 55px;
+    margin-bottom: 98px;
     padding-top: 78px;
     padding-bottom: 90px;
     background-image: url("../img/background/back-desktop-form@1x.jpg");
@@ -83,3 +83,31 @@
     padding: 78px 370px 90px;
   }
 }
+
+.greeting__wrapper--catalog {
+  padding-top: 51px;
+  padding-bottom: 67px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 115px;
+    padding-bottom: 117px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
+    padding-bottom: 31px;
+  }
+}
+
+.greeting__text--catalog {
+  width: 229px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: initial;
+  }
+}
+
+// .greeting--form-catalog::after {
+//   margin-top: 0;
+// }
