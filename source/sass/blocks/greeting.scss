@@ -12,9 +12,12 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    margin-bottom: 102px;
-    padding-top: 78px;
-    padding-bottom: 90px;
+    // margin-bottom: 102px;
+    // padding-top: 78px;
+    // padding-bottom: 90px;
+    padding-top: 21px;
+    padding-bottom: 0px;
+    margin-bottom: 55px;
     background-image: url("../img/background/back-desktop-index@1x.jpg");
   }
 }

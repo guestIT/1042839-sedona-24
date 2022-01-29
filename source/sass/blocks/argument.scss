@@ -30,14 +30,26 @@
   .argument__text--small-box {
     width: 158px;
     margin: 0 auto;
+
+    @media (min-width: $desktop-width) {
+      width: 313px;
+    }
   }
 
   .argument__text--middle-box {
     width: 185px;
+
+    @media (min-width: $desktop-width) {
+      width: 282px;
+    }
   }
 
   .argument__text--large-box {
     width: 200px;
+
+    @media (min-width: $desktop-width) {
+      width: 244px;
+    }
   }
 }
 
@@ -54,28 +66,43 @@
   @media (min-width: $tablet-width) {
     display: flex;
     width: 701px;
-    gap: 73px;
+    gap: 82px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1076px;
-    gap: 104px;
+    gap: 100px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .argument__wrapper {
+    padding-top: 26px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .argument__wrapper--order {
     order: 2;
+    margin-top: -16px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+      padding-top: 0;
+    }
   }
 
   .argument__wrapper--order p {
     padding-bottom: 0;
     width: 184px;
+
+    @media (min-width: $desktop-width) {
+      width: 230px;
+    }
   }
 
   .argument__wrapper--order h2 {
     margin-bottom: 10px;
-    padding-top: 9px;
   }
 
   .argument__wrapper--order span {
@@ -93,6 +120,12 @@
     position: relative;
     margin: 0;
     padding: 158px 0 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: initial;
+    padding: 158px 0 81px;
+    width: 282px;
   }
 }
 
@@ -137,6 +170,17 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .argument__advice--food {
+    width: 313px;
+    margin-right: 21px;
+  }
+
+  .argument__advice--gift {
+    width: 244px;
+  }
+}
+
 .argument__advice--gift,
 .argument__advice--food {
   padding-top: 26px;
@@ -149,9 +193,13 @@
 .argument__advice--home::before {
   background-image: url("../img/icon/icon-house.svg");
 
-  @media (min-width: $tablet-width) {
-    left: 91px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   left: 91px;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   left: 50%;
+  // }
 }
 
 .argument__advice--gift::before {
@@ -173,7 +221,7 @@
   @media (min-width: $tablet-width) {
     width: 76px;
     height: 68px;
-    left: 90px;
+    // left: 90px;
     top: 63px;
   }
 }
