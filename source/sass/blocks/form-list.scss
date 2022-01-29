@@ -2,6 +2,7 @@
   @include zero-list;
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     @include zero-margin;
@@ -22,7 +23,7 @@
 }
 
 .form-list__item:last-child {
-  margin-bottom: 46px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -38,7 +39,7 @@
   display: block;
   position: relative;
   margin-left: 21px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
@@ -65,15 +66,16 @@
   width: 25px;
   height: 25px;
   border: none;
-  right: 15px;
-  bottom: 12px;
+  right: 13px;
+  bottom: 14px;
   background-image: url("../img/icon/phone.svg");
   background-repeat: no-repeat;
 }
 
 .form-list__label--contacts-email::after {
   background-image: url("../img/icon/mail.svg");
-  bottom: 10px;
+  right: 12px;
+  bottom: 12px;
 }
 
 .form-list__span--hidden {
@@ -105,8 +107,11 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form-list__item--contacts {
+
+.form-list__item--contacts {
+  margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

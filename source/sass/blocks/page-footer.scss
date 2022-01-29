@@ -24,6 +24,10 @@
   }
 }
 
+.page-footer__wrapper--form {
+  margin-bottom: 29px;
+}
+
 .page-footer__title {
   @include zero-margin;
   padding-top: 33px;
@@ -38,6 +42,10 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+}
+
+.page-footer__title--form {
+  padding: 0;
 }
 
 .page-footer__link {

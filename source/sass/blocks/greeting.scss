@@ -60,6 +60,9 @@
   }
 }
 
+.greeting--form {
+  margin-bottom: 35px;
+}
 
 .greeting__text {
   display: block;
@@ -97,6 +100,21 @@
     padding-top: 45px;
     padding-bottom: 31px;
   }
+}
+
+.greeting__wrapper--form {
+  padding-top: 50px;
+  padding-bottom: 68px;
+
+  // @media (min-width: $tablet-width) {
+  //   padding-top: 115px;
+  //   padding-bottom: 117px;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   padding-top: 45px;
+  //   padding-bottom: 31px;
+  // }
 }
 
 .greeting__text--catalog {

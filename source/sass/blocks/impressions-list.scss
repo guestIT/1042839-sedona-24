@@ -1,14 +1,16 @@
 .impressions-list {
   @include zero-list;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   width: 280px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-right: 90px;
+    // margin-right: 90px;
+    padding-left: 15px;
+    width: initial;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,7 +22,7 @@
 .impressions-list__item {
   width: 100%;
   padding: 0;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
   margin-left: -14px;
 
   @media (min-width: $tablet-width) {
@@ -36,13 +38,17 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .impressions-list__option {
   font-style: normal;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: none;
 }
