@@ -11,6 +11,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     margin-bottom: 0;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,17 +28,23 @@
 
   @media (min-width: $tablet-width) {
     width: 215px;
-    margin: 0 auto;
-    margin-bottom: 42px;
+    // margin: 0 auto;
+    margin-bottom: 30px;
+    margin-left: 0;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
+      // margin-right: 40px;
     }
   }
 }
 
 .sights-list__item:last-child {
   margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .sights-list__label {
@@ -45,6 +52,10 @@
   align-items: center;
   cursor: pointer;
   margin-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .sights-list__span {
@@ -53,6 +64,10 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    white-space: nowrap;
+  }
 }
 
 .sights-list__label input[type="checkbox"] + .sights-list__element {

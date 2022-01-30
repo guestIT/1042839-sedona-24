@@ -11,8 +11,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 79px;
-    width: auto;
+    // margin-left: 79px;
+    width: 400px;
   }
 }
 
@@ -33,6 +33,10 @@
 .form-list__label {
   align-self: center;
   margin-right: 14px;
+
+  // @media (min-width: $desktop-width) {
+  //   margin-right: 0;
+  // }
 }
 
 .form-list__span {
@@ -56,6 +60,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
+    margin-right: 0;
   }
 }
 
@@ -110,6 +115,10 @@
 
 .form-list__item--contacts {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;

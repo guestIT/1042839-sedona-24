@@ -16,6 +16,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     margin-right: 0;
+    padding-left: 19px;
   }
 }
 
@@ -26,7 +27,7 @@
   margin-left: -14px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }
 

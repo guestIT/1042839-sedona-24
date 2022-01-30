@@ -66,6 +66,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+  }
 }
 
 .greeting__text {
@@ -115,10 +119,10 @@
     padding-bottom: 115px;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   padding-top: 45px;
-  //   padding-bottom: 31px;
-  // }
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
 }
 
 .greeting__text--catalog {

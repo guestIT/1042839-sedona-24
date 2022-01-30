@@ -16,11 +16,11 @@
     grid-row: 1 / 2;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 74px;
+      margin-bottom: 70px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 70px;
+      margin-bottom: 68px;
     }
   }
 
@@ -29,11 +29,12 @@
     grid-row: 2 / 3;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 51px;
+      margin-bottom: 48px;
     }
 
     @media (min-width: $desktop-width) {
       display: flex;
+      margin-bottom: 50px;
     }
   }
 
@@ -48,6 +49,10 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 68px;
     }
   }
 
@@ -85,6 +90,10 @@
 
   .form__block--padding-left {
     padding-left: 56px;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 80px;
+    }
   }
 }
 
@@ -93,11 +102,12 @@
   display: block;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 73px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
     margin-left: 0;
+    margin-bottom: 85px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,8 +137,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    // text-align: center;
-    // margin: 0 auto;
+    margin-bottom: 57px;
   }
 }
 
@@ -136,7 +145,12 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    white-space: nowrap;
   }
 }
 
@@ -164,6 +178,12 @@
     display: block;
     text-align: end;
     align-self: center;
+    max-width: 324px;
+    margin-top: -75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 155px;
   }
 }
 
@@ -172,20 +192,24 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     position: relative;
     width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
-    margin-bottom: 70px;
+    margin-bottom: 73px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form__subtitle--contacts::after {
     @include form-line;
+
+    @media (min-width: $desktop-width) {
+      bottom: 15px;
+    }
   }
 }
 
@@ -198,12 +222,14 @@
     margin-top: 0;
     position: relative;
     width: 100%;
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form__subtitle--sights::after {
     @include form-line;
+    bottom: 25px;
   }
 }
 
@@ -214,12 +240,18 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     position: relative;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form__subtitle--emotions::after {
     @include form-line;
+    bottom: 16px;
   }
 }
 
