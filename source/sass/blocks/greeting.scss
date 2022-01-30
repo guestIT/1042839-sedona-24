@@ -62,6 +62,10 @@
 
 .greeting--form {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .greeting__text {
@@ -106,10 +110,10 @@
   padding-top: 50px;
   padding-bottom: 68px;
 
-  // @media (min-width: $tablet-width) {
-  //   padding-top: 115px;
-  //   padding-bottom: 117px;
-  // }
+  @media (min-width: $tablet-width) {
+    padding-top: 116px;
+    padding-bottom: 115px;
+  }
 
   // @media (min-width: $desktop-width) {
   //   padding-top: 45px;

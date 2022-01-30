@@ -84,7 +84,7 @@
   }
 
   .form__block--padding-left {
-    padding-left: 50px;
+    padding-left: 56px;
   }
 }
 
@@ -134,6 +134,10 @@
 
 .form__subtitle--impressions {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .form__subtitle::before {
