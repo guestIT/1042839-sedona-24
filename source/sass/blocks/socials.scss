@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -20,6 +20,7 @@
 
 .socials__link {
   display: flex;
+  box-sizing: border-box;
   content: "";
   align-items: center;
   justify-content: center;

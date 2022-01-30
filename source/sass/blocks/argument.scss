@@ -2,19 +2,55 @@
   @include zero-margin;
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 25px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
     max-width: 151px;
     font-size: 21px;
     line-height: 26px;
+    margin-bottom: 12px;
+  }
+}
+
+.argument__title--standart-back {
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
   }
 }
 
 .argument__text {
   @include zero-margin;
   line-height: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .argument__text--small-box {
+    width: 158px;
+    margin: 0 auto;
+
+    @media (min-width: $desktop-width) {
+      width: 313px;
+    }
+  }
+
+  .argument__text--middle-box {
+    width: 185px;
+
+    @media (min-width: $desktop-width) {
+      width: 282px;
+    }
+  }
+
+  .argument__text--large-box {
+    width: 200px;
+
+    @media (min-width: $desktop-width) {
+      width: 244px;
+    }
+  }
 }
 
 .argument--standart {
@@ -29,25 +65,54 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 672px;
-    gap: 70px;
+    width: 701px;
+    gap: 82px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1076px;
-    gap: 104px;
+    gap: 100px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .argument__wrapper {
+    padding-top: 26px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .argument__wrapper--order {
     order: 2;
+    margin-top: -16px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  .argument__wrapper--order p {
+    padding-bottom: 0;
+    width: 184px;
+
+    @media (min-width: $desktop-width) {
+      width: 230px;
+    }
+  }
+
+  .argument__wrapper--order h2 {
+    margin-bottom: 10px;
+  }
+
+  .argument__wrapper--order span {
+    margin-bottom: 26px;
   }
 }
 
 .argument__advice {
   position: relative;
-  padding: 35px 0 0 49px;
+  padding: 0 0 0 50px;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
@@ -56,13 +121,19 @@
     margin: 0;
     padding: 158px 0 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: initial;
+    padding: 158px 0 81px;
+    width: 282px;
+  }
 }
 
 .argument__advice:last-child {
-  padding-bottom: 35px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: initial;
+    padding-bottom: 0;
   }
 }
 
@@ -91,16 +162,56 @@
   }
 }
 
+.argument__advice--home {
+  margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .argument__advice--food {
+    width: 313px;
+    margin-right: 21px;
+  }
+
+  .argument__advice--gift {
+    width: 244px;
+  }
+}
+
+.argument__advice--gift,
+.argument__advice--food {
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 158px;
+  }
+}
+
 .argument__advice--home::before {
   background-image: url("../img/icon/icon-house.svg");
+
+  // @media (min-width: $tablet-width) {
+  //   left: 91px;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   left: 50%;
+  // }
 }
 
 .argument__advice--gift::before {
   background-image: url("../img/icon/icon-gift.svg");
+  left: 4px;
+  top: 16px;
 
   @media (min-width: $tablet-width) {
     width: 64px;
     height: 75px;
+    left: 50%;
+    top: 60px;
   }
 }
 
@@ -110,6 +221,8 @@
   @media (min-width: $tablet-width) {
     width: 76px;
     height: 68px;
+    // left: 90px;
+    top: 63px;
   }
 }
 
@@ -121,13 +234,17 @@ li.argument--gray {
   display: block;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .argument__description {
   @include zero-margin;
   text-align: center;
-  padding: 0 28px 39px;
+  padding: 0 28px 33px;
 
   @media (min-width: $tablet-width) {
     line-height: 21px;

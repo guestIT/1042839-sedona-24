@@ -16,9 +16,10 @@
 }
 
 .review__header--title {
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
     font-size: 30px;
   }
 }
@@ -26,13 +27,14 @@
 .review__description {
   @include zero-margin;
   text-align: center;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    width: 440px;
+    margin-bottom: 85px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 56px;
+    margin-bottom: 58px;
   }
 }

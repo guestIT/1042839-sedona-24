@@ -1,16 +1,22 @@
 .features {
   @include zero-margin;
-  padding-top: 32px;
+  padding-top: 33px;
   padding-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
     margin: 0 auto;
     width: 520px;
     height: 110px;
-    margin-bottom: 28px;
+    margin-bottom: 50px; //бфло 28
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
   }
 }
 
@@ -25,5 +31,6 @@
 
   @media (min-width: $tablet-width) {
     width: max-content;
+    padding-left: 18px;
   }
 }

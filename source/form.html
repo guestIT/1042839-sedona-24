@@ -43,9 +43,9 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="greeting greeting--form-catalog">
-        <div class="greeting__wrapper">
-            <img class="greeting__text" src="img/icon/text-sedona-form.svg" width="320" height="308" alt="Приветствие сайта Седона">
+      <section class="greeting greeting--form-catalog greeting--form">
+        <div class="greeting__wrapper greeting__wrapper--form">
+            <img class="greeting__text greeting__text--catalog" src="img/icon/text-sedona-form.svg" width="320" height="308" alt="Приветствие сайта Седона">
         </div>
       </section>
       <section class="review">
@@ -57,7 +57,7 @@
       <section class="page-wrapper form">
         <h2 class="visually-hidden">Форма отзыва</h2>
         <form action="https://echo.htmlacademy.ru">
-          <fieldset class="form__block">
+          <fieldset class="form__block form__block--padding-left">
             <legend class="form__subtitle">Представьтесь:</legend>
             <ul class="form-list">
               <li class="form-list__item">
@@ -92,8 +92,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__block">
-            <legend class="form__subtitle">Ваше общее впечатление:</legend>
+          <fieldset class="form__block form__block--vertical-border">
+            <legend class="form__subtitle form__subtitle--impressions">Ваше общее впечатление:</legend>
             <ul class="impressions-list">
               <li class="impressions-list__item">
                 <label class="impressions-list__label">
@@ -155,7 +155,7 @@
             <legend class="form__subtitle form__subtitle--emotions"><span class="form__subtitle-span">Опишите свои эмоции:</span></legend>
             <textarea class="emotions" name="emotions" cols="30" rows="10" maxlength="200" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="btn form__block-button btn--review" type="submit">Отправить отзыв</button>
+          <button class="form__block-button form__block-button--review" type="submit">Отправить отзыв</button>
           <span class="form__footnote">* - Обязательные поля</span>
         </form>
       </section>
@@ -173,8 +173,8 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <h2 class="page-footer__title">
+      <div class="page-footer__wrapper page-footer__wrapper--form">
+        <h2 class="page-footer__title page-footer__title--form">
           <a class="page-footer__link" href="#nowhere">#visitsedona</a>
         </h2>
       </div>

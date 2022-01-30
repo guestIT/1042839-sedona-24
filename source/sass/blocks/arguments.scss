@@ -9,7 +9,7 @@
   width: 100%;
   background-image: url("../img/icon/triangle-mobile.svg");
   position: absolute;
-  top: -1px;
+  top: 0;
   left: 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -48,7 +48,7 @@
 }
 
 .arguments__item--illustration:first-child {
-  padding-top: 55px;
+  padding-top: 75px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
