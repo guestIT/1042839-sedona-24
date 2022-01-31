@@ -29,12 +29,9 @@
 
 .gallery__header {
   @include zero-margin;
-  // margin-bottom: 28px;
 }
 
 .gallery__header--title {
-  // @inc zero-marginlude;
-  // margin-top: 32px;
   margin: 0 auto;
   margin-bottom: 30px;
   font-size: 18px;
@@ -61,12 +58,6 @@
     margin-bottom: 79px;
   }
 }
-
-// .gallery__description--catalog {
-//   width: 280px;
-//   margin: 0 auto;
-// }
-
 
 @media (min-width: $tablet-width) {
   .gallery__video {

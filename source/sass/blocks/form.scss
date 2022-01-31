@@ -1,5 +1,5 @@
 @media (min-width: $tablet-width) {
-  form { //можно ли повесить класс форм на саму форму? такой класс уже есть в теге section если применить грид к секции, раскладка грид  не работала
+  form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 648px;

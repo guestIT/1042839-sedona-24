@@ -6,24 +6,20 @@
   }
 }
 
-.photo__signature {
-  // display: flex;
-  // flex-direction: column;
-
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .photo__signature {
     display: grid;
     grid-template-columns: 1fr minmax(max-content, max-content);
     align-items: center;
     position: relative;
     background-color: #f2f2f2;
     padding: 14px 21px 19px 20px;
-    // justify-content: center;
-  }
 
-  @media (min-width: $desktop-width) {
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 12px 21px 18px 19px;
-    margin-top: -78px;
+    @media (min-width: $desktop-width) {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 12px 21px 18px 19px;
+      margin-top: -78px;
+    }
   }
 }
 
@@ -127,7 +123,6 @@
   color: #000000;
   font-size: 14px;
   font-weight: bold;
-  // overflow: hidden;
 
   @media (min-width: $desktop-width) {
     color: #ffffff;

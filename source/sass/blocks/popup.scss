@@ -1,5 +1,4 @@
 .popup {
-  display: none;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -90,6 +89,7 @@
 }
 
 .popup__warning {
+  @include btn;
   display: block;
   text-align: center;
   width: 180px;
@@ -102,6 +102,7 @@
 }
 
 .popup__closed {
+  @include btn;
   display: block;
   width: 280px;
   font-size: 18px;
@@ -111,7 +112,6 @@
     width: 458px;
   }
 }
-
 
 .popup__background {
   width: 280px;
