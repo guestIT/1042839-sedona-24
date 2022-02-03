@@ -124,6 +124,10 @@
   font-size: 14px;
   font-weight: bold;
 
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+  }
+
   @media (min-width: $desktop-width) {
     color: #ffffff;
   }

@@ -1,4 +1,17 @@
 .page-main {
   margin: 0 auto;
   background-color: #ffffff;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.page-main--catalog {
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
