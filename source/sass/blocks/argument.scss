@@ -77,36 +77,23 @@
 
 @media (min-width: $tablet-width) {
   .argument__wrapper {
-    padding-top: 26px;
+    padding: 40px 32px 42px 32px;
+
+    @media (min-width: $desktop-width) {
+      padding: 47px 52px 57px 53px;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .argument__wrapper--order {
     order: 2;
-    margin-top: -16px;
+    padding: 43px 36px 41px 36px;
 
     @media (min-width: $desktop-width) {
       margin-top: 0;
-      padding-top: 0;
+      padding: 51px 78px 53px 79px;
     }
-  }
-
-  .argument__wrapper--order p {
-    padding-bottom: 0;
-    width: 184px;
-
-    @media (min-width: $desktop-width) {
-      width: 230px;
-    }
-  }
-
-  .argument__wrapper--order h2 {
-    margin-bottom: 10px;
-  }
-
-  .argument__wrapper--order span {
-    margin-bottom: 26px;
   }
 }
 
@@ -228,7 +215,7 @@ li.argument--gray {
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 }
 
@@ -241,14 +228,13 @@ li.argument--gray {
     line-height: 21px;
     max-width: 290px;
     display: inline-block;
+    padding: 0;
   }
 }
 
 .argument__image {
   display: block;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    max-height: 256px;
-  }
+  height: 100%;
+  object-fit: cover;
 }

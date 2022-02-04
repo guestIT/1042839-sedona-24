@@ -31,8 +31,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    align-items: center;
-    max-height: 256px;
   }
 
   @media (min-width: $desktop-width) {

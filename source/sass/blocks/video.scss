@@ -105,12 +105,16 @@
 
 .video__bar {
   position: absolute;
-  top: 15px;
+  top: 9px;
   left: 22px;
 
   @media (min-width: $tablet-width) {
-    top: 38px;
+    top: 31px;
     left: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 38px;
   }
 }
 
